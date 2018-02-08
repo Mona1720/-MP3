@@ -20,7 +20,7 @@ with open('C:/Users/Mn/Desktop/1.txt', 'r') as f:
 		print n
 		#语音效果设置，平台上有参考文档
 		result  = client.synthesis(line, 'zh', 1, {'vol': 5,'per':3})
-		#写入MP3，以行转化，百度限制没错传递2048字节，MP3合并参考WinRAR
+		#写入MP3，以行转化，百度限制每次传递2048字节，MP3合并参考WinRAR
 		with open('C:/Users/Mn/Desktop/1/%s.mp3'%n, 'wb') as f:
 			f.write(result)
 		n=n+1
